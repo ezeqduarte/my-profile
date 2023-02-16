@@ -28,10 +28,39 @@
 
 .active {
   font-weight: 600 !important;
-  border-bottom: 1px solid #ffbf00;
+  
 }
 
+ul li {
+  color: #e1e1e1;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
 
+ul li:focus:after,
+ul li:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+ul li:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffbf00;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -42,4 +71,3 @@
     justify-content: center;
   }
 }
-

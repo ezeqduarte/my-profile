@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 
+
+const buttons = [
+  { button: "Inicio", rute: "" },
+  { button: "Sobre mi", rute: "sobre-mi" },
+  { button: "Proyectos", rute: "mis-trabajos" },
+  { button: "Contacto", rute: "contacto" },
+];
+
 export default function NavBar() {
   const location = useLocation();
 
@@ -9,13 +17,6 @@ export default function NavBar() {
   useEffect(() => {
     setUrl(location.pathname);
   }, [location]);
-
-  const buttons = [
-    { button: "Inicio", rute: "" },
-    { button: "Sobre mi", rute: "sobre-mi" },
-    { button: "Proyectos", rute: "mis-trabajos" },
-    { button: "Contacto", rute: "contacto" },
-  ];
 
   return (
     <div className="navbar">
