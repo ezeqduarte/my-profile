@@ -1,4 +1,5 @@
 import React from "react";
+import "./trabajos.css";
 
 export default function Trabajos() {
   return (

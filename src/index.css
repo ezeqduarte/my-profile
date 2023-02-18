@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(252, 252, 252);
+  padding: 25px;
 }
 
 .black {
@@ -33,11 +34,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 h5 {
@@ -45,7 +46,12 @@ h5 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 17px;
+  line-height: 1.5rem;
+}
+
+.negrita {
+  font-weight: 600;
 }
 
 @media (min-width: 576px) {
@@ -62,20 +68,20 @@ p {
 
   h2 {
     font-size: 3rem !important;
-  } 
-  
+  }
+
   h3 {
     font-size: 1rem;
   }
-  
+
   h4 {
     font-size: 1rem;
   }
-  
+
   h5 {
     font-size: 1rem;
   }
-  
+
   p {
     font-size: 1rem;
   }

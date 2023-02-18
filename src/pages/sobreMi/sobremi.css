@@ -1,0 +1,64 @@
+.pic-aboutme {
+  width: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.pic-aboutme img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 560px;
+  border: 1px solid black;
+}
+
+.text-aboutme {
+  width: 850px;
+  padding: 70px;
+}
+
+.text-aboutme h4 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.text-aboutme h3 {
+  text-transform: uppercase;
+}
+
+.text-aboutme p {
+  margin-bottom: 15px;
+}
+
+.rigth-div-aboutme {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.rigth-div-aboutme img {
+  width: 90px;
+  object-fit: contain;
+  cursor: pointer;
+  filter: grayscale(200%);
+}
+
+.rigth-div-aboutme img:hover {
+  transition: 400ms;
+  filter: grayscale(0%);
+}
+
+
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 150px;
+}
+
+
